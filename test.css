@@ -1,0 +1,21 @@
+body {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+.button_active {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.button_active > :nth-child(2) {
+  text-align: center;
+  color: aliceblue;
+}
+.flex_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

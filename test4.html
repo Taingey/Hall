@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Click the follwing to see the result : </p>
+    <form action="">
+        <input type="button" value="Click Me" 
+        onclick="
+            function myFunc(){
+                var a = 100;
+                try{
+                    alert('value of variable is a : ' + a);
+                }
+                catch(err){
+                    alert('Error: '+ err.message);
+                }
+            }
+            console.log(myFunc());
+        "
+    > 
+   
+    </form>
+
+    <!-- <h2>JavaScript Error Handling</h2>
+    <p>How to use <b>catch</b> to display an error</p>
+    <p id="Demo"></p>
+
+    <script>
+      try {
+        alert("welcome");
+      } catch (err) {
+        document.getElementById("demo").innerHTML = err.message;
+      }
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+        }
+        .container .bg-1{
+            background: #051fc7;
+            height: 16vw;
+            width: 70vw;
+        }.container .bg-2{
+            background: #e90000;
+            height: 16vw;
+            width: 70vw;
+        }
+        .container .image img{
+            position: absolute;
+            top: 50%;
+            right: 20%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="bg-1"></div>
+        <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Angkor_Wat_in_Flag_of_Cambodia.svg/1280px-Angkor_Wat_in_Flag_of_Cambodia.svg.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

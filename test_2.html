@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="test_2.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <section class="container">
+    <div class="component_1">
+      <div class="paragraph_1">
+        <h1 class="num Left">01</h1>
+        <p>Sample text. Click select the text box. Click agian
+          or double click to start editing the text.
+        </p>
+      </div>
+      <div class="paragraph_2">
+        <p>The principal reason we continue to adapt and evolve our
+          business model is to ensure that we are meeting our customers'
+          expectations. One example of this has been to use modern
+          technology and the introduction of the real time tracking
+          our teams using GPS.
+        </p>
+      </div>
+      <div class="paragraph_3">
+        <h1 class="num Left">02</h1>
+        <p>Sample text. Click select the text box. Click agian
+          or double click to start editing the text.
+        </p>
+      </div>
+    </div>
+    <div class="component_2">
+      <div class="paragraph_4">
+        <p>Article evident arrived express highest men did boy.
+          Mistress sensible entirely am so. Quick can manor smart
+          money hopes worth too. Comfort produce husband boy
+          her had hearing. Law others theirs passed but wishes.
+          You day real less till dear read. Considered use
+          dispatched melancholy sympathize discretion led.
+        </p>
+        <p>Oh feel if up to till like. He an thing rapid these
+          after going drawn or. Timed she his law the spoil round
+          defer. In surprise concerns informed betrayed he learning
+          is ye.
+        </p>
+        <a href="#">
+          <i class="bx bx-phone"></i>
+          +1 (234) 567-8910
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // OVERSCROLLING
+    const scroll = ScrollReveal({
+      distance: '70px',
+      duration: 2500,
+      reset: true,
+      delay: -50,
+      rotate: '0deg',
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      interval: 600,
+      rotate: {
+        x: -40,
+        z: -100
+      },
+    });
+
+    scroll.reveal('.Left', {
+      delay: 400,
+      origin: 'left',
+    });
+  </script>
+</body>
+</html>
