@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Animated Clock</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      .clock {
+        width: 40rem;
+        height: 40rem;
+        background-image: url("girl.jpg");
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .second-hand {
+        position: absolute;
+        background-color: #ffffff;
+        width: 50%;
+        top: 10px;
+        transform-origin: bottom right;
+        transform: rotate(90deg);
+      }
+      .third-hand {
+        position: absolute;
+        background-color: #ffffff;
+        width: 20px;
+        height: 20px;
+        bottom: 0;
+        right: -9px;
+        border-radius: 50%;
+      }
+      .Four-hand {
+        position: absolute;
+        transform: rotate(-90deg);
+        width: 20px;
+        height: 20px;
+        top: -15px;
+        right: -3px;
+        border-radius: 50%;
+        color: #f0f0f0;
+        font-size: 2rem;
+      }
+      .second-hand {
+        height: 19rem;
+        width: 2px;
+        top: 10px;
+        left: 49%;
+        animation: rotate 60s linear infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(90deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="second-hand">
+        <div class="third-hand"></div>
+        <div class="Four-hand">></div>
+      </div>
+    </div>
+  </body>
+</html>

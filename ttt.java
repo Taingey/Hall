@@ -1,16 +1,9 @@
-public class Student {
-    // Fields
-    private String name;
-    private int age;
+public class Main {
+    public static void main(String[] args) {
+        Animal genericAnimal = new Animal();
+        genericAnimal.makeSound(); // Output: Some generic sound
 
-    // Constructor
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Method
-    public void displayInfo() {
-        System.out.println("Name: " + name + ", Age: " + age);
+        Dog myDog = new Dog();
+        myDog.makeSound(); // Output: Woof! Woof!
     }
 }
